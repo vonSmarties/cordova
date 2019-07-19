@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <title>video</title>
+  </head>
+  <body>
+    <div>
+      <div id="profile_video" class="btn_picture col-xs-12 center visible" style="height: auto;">
+        <div class="" style="margin-top: 11px">
+          <video src="" controls id="my-video" width="320" height="250">Emplacement de la video</video>
+        </div>
+      </div>
+      <button type="button" id="btn_video" class="btn col-xs-12">Récupérer une vidéo</button>
+    </div>
+    <!-- Popup Modal pour choix source video : prendre une video avec la Camera ou rechercher dans les albums-->
+    <div class="modal" id="choiceSrcVideo">
+      <div class="modal-dialog modal-dialog-centered" role="document" >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+            <h4 class="modal-title">Choisir une source Vidéo</h4>
+          </div>
+          <div class="modal-body">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="useCameraVideo">
+
+              Use Camera to take video
+            </button>
+
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="useAlbumVideo">
+
+              Get the video from your album
+            </button>
+          </div>
+          <div class="modal-footer">
+            <p>&nbsp;</p>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+    <script src="js/bootstrap.native-master/dist/bootstrap-native-v4.js"></script>
+    <script src="js/bootstrap.native-master/dist/polyfill.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+  </body>
+</html>

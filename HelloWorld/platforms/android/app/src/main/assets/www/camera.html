@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <title>photo</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-12">
+        <img src="" id="my-photo" width="180" height="240">
+        <button type="button" id="btn_photo" class="btn btn-default">prendre une photo</button>
+      </div>
+    </div>
+     <!-- Popup Modal pour choix source photo : -->
+    <div class="modal" id="choiceSrcPhoto">
+      <div class="modal-dialog modal-dialog-centered" role="document" >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Choisir la source de l’image</h4>
+          </div>
+          <div class="modal-body">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="useCamera">
+              Use Camera to take picture
+            </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="useAlbum">
+              Get the image from your pictures album
+            </button>
+          </div>
+          <div class="modal-footer">
+            <p>&nbsp;</p>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.native-master/dist/bootstrap-native-v4.js"></script>
+    <script src="js/bootstrap.native-master/dist/polyfill.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+  </body>
+</html>
